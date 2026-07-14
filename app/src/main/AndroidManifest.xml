@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Churrascometro">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimeDurationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChildrenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdultsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
