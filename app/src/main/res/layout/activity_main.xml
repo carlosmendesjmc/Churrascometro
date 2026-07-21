@@ -3,30 +3,93 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/background_2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/BemvindoMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="Bem vindo ao churrascômetro"
+        android:gravity="center"
+        android:text="Bem vindo ao"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_IniciarMainActivity"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/ChurrascomentroMain"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Churrascômetro"
+        android:textColor="@color/churras_gradient_end"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BemvindoMain" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_IniciarMainActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:text="Iniciar "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:backgroundTint="@color/churras_gradient_end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgchurrasqueiraMain"
+        android:layout_width="287dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChurrascomentroMain"
+        app:srcCompat="@mipmap/churrasqueira_foreground" />
+
+    <TextView
+        android:id="@+id/edt_Texto1Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="O app que calcula a quantidade\n ideal do seu churrasco com"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgchurrasqueiraMain" />
+
+    <TextView
+        android:id="@+id/edt_Texto2Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" praticidade e precisão."
+        android:textColor="@color/churras_gradient_end"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Texto1Main" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
